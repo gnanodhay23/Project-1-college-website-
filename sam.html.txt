@@ -1,0 +1,14 @@
+<html>
+<head>
+</head>
+<body>
+<p id="D"> ksrjowih </p>
+<script>
+const myparse=document.querryselector("#D")
+myparse.addEventListener("mouseover",function f1()
+{
+myparse.stylr.bacjgroundcolor="red";
+});
+</script>
+</body>
+</html>

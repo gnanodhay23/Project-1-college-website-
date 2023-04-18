@@ -1,0 +1,78 @@
+<html>
+<head>
+<style>
+#x{
+
+text-align:center
+background-image:url("")
+background-color:blue
+opacity:0.3}
+</style>
+</head>
+<body id="x">
+<h1 id="g">Guessing the number</h1>
+<p id="c"></p>
+<label for="o" name="o" id="w">Enter the number</label>
+<input type="number" id="o" name="o">
+<button onclick="f1(this)" id="s">Guess</button>
+<script>
+let cou=5
+const c=Math.floor(Math.random()* 100 + 1);
+let k=0
+function f1()
+{
+let b=document.getElementById("o").value;
+if(b==c && k!=1)
+{
+document.getElementById("c").innerHTML="Guess is Correct";
+document.getElementById("c").style.color="MediumSeaGreen";
+cou=cou-1
+alert("Guess is Correct")
+k=1
+let v=document.getElementById("s");
+v.remove();
+let z=document.getElementById("o");
+z.remove();
+document.getElementById("w").innerHTML="GAME OVER"
+}
+else if(b<c && cou>0 && k!=1)
+{
+document.getElementById("c").innerHTML="Guess a Higher number";
+document.getElementById("c").style.color="tomato";
+cou=cou-1
+alert("guess is incorrect"+" "+cou+" "+"remaining chances")
+}
+else if(b>c && cou>0 && k!=1)
+{
+document.getElementById("c").innerHTML="Guess a Smaller number";
+document.getElementById("c").style.color="tomato";
+cou=cou-1
+alert("guess is incorrect"+" "+cou+" "+"remaining chances")
+
+} 
+else
+{
+if(k!=1)
+{
+document.getElementById("c").innerHTML="Guess is incorrect";
+document.getElementById("c").style.color="tomato";
+cou=cou-1;
+}
+}
+if(cou==0  && k!=1)
+{
+document.getElementById("c").innerHTML="OOPS! you have Lost"
+document.getElementById("c").style.color="tomato";
+alert("sorry the guessed number is "+c)
+let v=document.getElementById("s");
+s.remove();
+let z=document.getElementById("o");
+z.remove();
+document.getElementById("w").innerHTML="GAME OVER"
+document.getElementById("w").style.color="tomato"
+}
+}
+</script>
+
+</body>
+</html>

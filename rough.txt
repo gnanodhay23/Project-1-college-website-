@@ -1,0 +1,24 @@
+if(isNaN(guess))
+{
+document.getElementById("s").innerHTML="Pls enter correct number"
+}
+else if (guess<rn)
+{
+ra--;
+document.getElementById("s").innerHTML="too low";
+}
+else if (guess>rn)
+{
+ra--;
+document.getElementById("s").innerHTML="too high";
+}
+else if (guess == rn)
+{
+document.getElementById("s").innerHTML="correct number";
+}
+else if (ra==0)
+{
+
+document.getElementById("d").setdissable
+}
+</script
